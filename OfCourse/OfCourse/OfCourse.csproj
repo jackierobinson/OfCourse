@@ -192,14 +192,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AngularApp\app.js" />
-    <Content Include="AngularApp\Components\ScheduleCard\ScheduleCard.html" />
-    <Content Include="AngularApp\Components\ScheduleCard\ScheduleCardController.js" />
-    <Content Include="AngularApp\Components\ScheduleCard\ScheduleCardDirective.js" />
-    <Content Include="AngularApp\Components\Schedule\Schedule.html" />
-    <Content Include="AngularApp\Components\Schedule\ScheduleController.js" />
-    <Content Include="AngularApp\Components\Schedule\ScheduleDirective.js" />
-    <Content Include="AngularApp\Components\Schedule\ScheduleFactory.js" />
-    <Content Include="AngularApp\styles.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -215,7 +207,7 @@
   <ItemGroup>
     <Folder Include="AngularApp\Components\Calendar\" />
     <Folder Include="AngularApp\Components\Offerings\" />
-    <Folder Include="AngularApp\Components\Shared\" />
+    <Folder Include="AngularApp\Components\Schedule\" />
     <Folder Include="AngularApp\Scripts\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
