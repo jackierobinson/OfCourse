@@ -1,14 +1,23 @@
 ﻿<html>
 <head>
     <title>Of Course</title>
-    <script src="/Scripts/angular.js"></script>
-    <script src="/App/app.js"></script>
-    <script src="/App/Components/ScheduleCard/ScheduleCardController.js"></script>
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <link rel="stylesheet" href="~/Content/bootstrap-theme.css" />
+    <link rel="stylesheet" href="~/App/styles.css" />
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/App/app.js"></script>
+    <script src="~/App/Components/Schedule/ScheduleController.js"></script>
+    <script src="~/App/Components/Schedule/ScheduleDirective.js"></script>
 
 </head>
 <body ng-app="ofCourse">
-    <div>This is the calendar component</div>
-    <div ng-controller="ScheduleCardController">This is the schedule component</div>
+    <div ng-controller="ScheduleController">
+        <my-Schedule schedule="schedule"></my-Schedule>
+    </div>
+
+    <div>This is the calendar component</div>   
     <div>This is the course offerings component</div>
 </body>
 </html>

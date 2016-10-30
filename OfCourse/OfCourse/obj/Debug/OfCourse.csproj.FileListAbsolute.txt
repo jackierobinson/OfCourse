@@ -72,6 +72,6 @@ C:\Users\Jackie\Desktop\OfCourse\OfCourse\OfCourse\bin\Microsoft.Owin.Security.G
 C:\Users\Jackie\Desktop\OfCourse\OfCourse\OfCourse\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Jackie\Desktop\OfCourse\OfCourse\OfCourse\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Jackie\Desktop\OfCourse\OfCourse\OfCourse\bin\System.Web.Http.Owin.xml
-C:\Users\Jackie\Desktop\OfCourse\OfCourse\OfCourse\obj\Debug\OfCourse.csprojResolveAssemblyReference.cache
 C:\Users\Jackie\Desktop\OfCourse\OfCourse\OfCourse\obj\Debug\OfCourse.dll
 C:\Users\Jackie\Desktop\OfCourse\OfCourse\OfCourse\obj\Debug\OfCourse.pdb
+C:\Users\Jackie\Desktop\OfCourse\OfCourse\OfCourse\obj\Debug\OfCourse.csprojResolveAssemblyReference.cache
