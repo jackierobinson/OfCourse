@@ -14,19 +14,10 @@
 
 #
 
-#
-
-#
-
-#
-
-
-
-
 
 # Table of Contents
 
-**Introduction**                          ** 4**
+**Introduction**                           **4**
 
 Purpose                                      4
 
@@ -36,7 +27,7 @@ Scope                                        4
 
 Design Summary                               4
 
-**Conceptual System Architecture**        ** 5**
+**Conceptual System Architecture**         **5**
 
 Overview                                     5
 
@@ -46,7 +37,7 @@ Daily Schedule Table                         5
 
 Enrollment Tool                              5
 
-**Technical System Architecture**         ** 7**
+**Technical System Architecture**          **7**
 
 Overview                                     7
 
@@ -56,7 +47,7 @@ Daily Schedule Table                         7
 
 Enrollment Tool                              7
 
-**Application Views**                     ** 9**
+**Application Views**                      **9**
 
 Logical View                                 9
 
@@ -66,19 +57,19 @@ Development View                            11
 
 Work-Assignment View                        11
 
-**User Interface Design**                ** 13**
+**User Interface Design**                 **13**
 
 User Interface Description                  13
 
 User Interface Diagram                      14
 
-**Database Design**                      ** 15**
+**Database Design**                       **15**
 
 Database Description                        15
 
 Database Diagram                            15
 
-**Element Catalog**                      ** 16**
+**Element Catalog**                      **16**
 
 
 
