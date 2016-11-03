@@ -1,4 +1,4 @@
-*View OfCourse title page in GitHub*
+![alt text](https://github.com/jackierobinson/OfCourse/blob/master/OfCourse%20SDD%20Logo.PNG)
 
 # Software Design Document
 
@@ -24,67 +24,61 @@
 
 
 
-
-
-#
-
-
-
 # Table of Contents
 
-**Introduction****         **** 4**
+**Introduction**                          ** 4**
 
-Purpose4
+Purpose                                      4
 
-Intended Audience4
+Intended Audience                            4
 
-Scope4
+Scope                                        4
 
-Design Summary4
+Design Summary                               4
 
-**Conceptual System Architecture****         **** 5**
+**Conceptual System Architecture**        ** 5**
 
-Overview5
+Overview                                     5
 
-Weekly Schedule Table5
+Weekly Schedule Table                        5
 
-Daily Schedule Table5
+Daily Schedule Table                         5
 
-Enrollment Tool5
+Enrollment Tool                              5
 
-**Technical System Architecture****         **** 7**
+**Technical System Architecture**         ** 7**
 
-Overview7
+Overview                                     7
 
-Weekly Schedule Table7
+Weekly Schedule Table                        7
 
-Daily Schedule Table7
+Daily Schedule Table                         7
 
-Enrollment Tool7
+Enrollment Tool                              7
 
-**Application Views****         **** 9**
+**Application Views**                     ** 9**
 
-Logical View9
+Logical View                                 9
 
-Physical View10
+Physical View                               10
 
-Development View11
+Development View                            11
 
-Work-Assignment View11
+Work-Assignment View                        11
 
-**User Interface Design****         **** 13**
+**User Interface Design**                ** 13**
 
-User Interface Description13
+User Interface Description                  13
 
-User Interface Diagram14
+User Interface Diagram                      14
 
-**Database Design****         **** 15**
+**Database Design**                      ** 15**
 
-Database Description15
+Database Description                        15
 
-Database Diagram15
+Database Diagram                            15
 
-**Element Catalog****         **** 16**
+**Element Catalog**                      ** 16**
 
 
 
@@ -226,15 +220,15 @@ If the time slot of the tentatively-enrolled course does not interfere with any 
 
 Logical View
 
-*View Logical View in GitHub*
+![alt text](https://github.com/jackierobinson/OfCourse/blob/master/Logical%20View.PNG)
 
 Physical View
 
-*View Physical View in GitHub*
+![alt text](https://github.com/jackierobinson/OfCourse/blob/master/Physical%20View.PNG)
 
 Development View
 
-*View Development View in GitHub*
+![alt text](https://github.com/jackierobinson/OfCourse/blob/master/Development%20View.PNG)
 
 Work-Assignment View
 
@@ -302,15 +296,7 @@ The website is designed to be visually appealing but professional, in particular
 
 User Interface Diagram
 
-
-
-
-
-
-
-
-
-
+![alt text](https://github.com/jackierobinson/OfCourse/blob/master/User%20Interface.PNG)
 
 
 
@@ -333,7 +319,7 @@ Because our application exists off the premises that it would be used as an exte
 Database Diagram
 
 
-*View Database Diagram in GitHub*
+![alt text](https://github.com/jackierobinson/OfCourse/blob/master/Database%20Diagram.PNG)
 
 
 
@@ -344,7 +330,7 @@ Database Diagram
 
 ## Element Catalog
 
+![alt text](https://github.com/jackierobinson/OfCourse/blob/master/Element%20Catalog%201.PNG)
 
-
-*View Element Catalogs in GitHub*
+![alt text](https://github.com/jackierobinson/OfCourse/blob/master/Element%20Catalog%202.PNG)
 
