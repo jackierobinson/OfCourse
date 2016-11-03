@@ -72,7 +72,7 @@ Database Diagram                            15
 **Element Catalog**                      **16**
 
 
-
+#
 
 
 ## Introduction
@@ -120,35 +120,6 @@ Enrollment Tool
 The next subfeature occurs after the search, in which the area below the search is populated with courses depending upon the aforementioned search. The user can select from the list of populated courses, which will produce a pop-up box displaying various information about the selected course, including a full name, description, attendance day/time, etc. A button is also in the box allowing the customer to enroll in the course. If the customer is able to schedule the course (i.e., the course does not interfere with any existing time slots), the course is added to the user&#39;s schedule in real-time and corresponding tables are updated to reflect the change.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-##
-
 ##
 
 
@@ -176,33 +147,6 @@ Enrollment Tool
 Once an user performs a search, a query is performed to locate the course based on the search, followed by those courses listed below the search section. The user can then select a course, which populates a pop-up box detailing information about the course (ID, department, description, etc.). Included in this pop-up box is a button that allows the user to enroll in the course.
 
 If the time slot of the tentatively-enrolled course does not interfere with any existing time slots via usage of a query to check the start and end times of the currently enrolled times, then the user is enrolled into the course. A message below the list of courses will appear, with a prompt that reads a message along the lines of &quot;Successfully enrolled in [Department] [ID]&quot; or an error message informing the user that they could not be enrolled in the course.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -240,37 +184,6 @@ We have chosen to delegate tasks as follows:
  Che'La and Tyler are in charge of documenting group meetings and relaying information between group members. They also handle the design of the _OfCourse!_ logo. They assist in the planning and coordination of tasks in meetings.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-##
-
-##
-
 ##
 
 ## User Interface Design
@@ -290,11 +203,6 @@ User Interface Diagram
 ![alt text](https://github.com/jackierobinson/OfCourse/blob/master/User%20Interface.PNG)
 
 
-
-
-
-
-
 ## Database Design
 
 Database Description
@@ -311,12 +219,6 @@ Database Diagram
 
 
 ![alt text](https://github.com/jackierobinson/OfCourse/blob/master/Database%20Diagram.PNG)
-
-
-
-
-
-
 
 
 ## Element Catalog
