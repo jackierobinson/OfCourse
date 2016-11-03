@@ -4,7 +4,7 @@
 
 # CSC 4430
 
-# Prepared by the OfCourse! Development Team
+# Prepared by Tyler Anderson, Phillip Breland, Che'La Fleming, Nina Mohammed, Jackie Robinson, and Kameron Smart
 
 **Revision History**
 
@@ -12,7 +12,6 @@
 | --- | --- | --- | --- |
 | OfCourse! Development Team | 10/29 | Initial Document/Draft | 1.1 |
 
-#
 
 
 # Table of Contents
@@ -72,8 +71,6 @@ Database Diagram                            15
 **Element Catalog**                      **16**
 
 
-#
-
 
 ## Introduction
 
@@ -118,9 +115,6 @@ Enrollment Tool
  The enrollment feature of _OfCourse!_ provides users with the ability to search for and add courses to their existing schedule in real-time. This tool combines two components - the schedule booklet and &quot;Schedule Request&quot; feature - found on **myLSU**. The first subfeature of the enrollment tool is the search tools for locating courses. The user can search for classes depending on two qualities; Department and Level, in which Level denotes the course&#39;s level (meaning 1000-level courses, 2000-level courses, etc.). This search can be performed in one of two ways; by selecting from a list of departments and levels based on a drop-down menu, or a manual search for a course if the user knows the specific information for the course.
 
 The next subfeature occurs after the search, in which the area below the search is populated with courses depending upon the aforementioned search. The user can select from the list of populated courses, which will produce a pop-up box displaying various information about the selected course, including a full name, description, attendance day/time, etc. A button is also in the box allowing the customer to enroll in the course. If the customer is able to schedule the course (i.e., the course does not interfere with any existing time slots), the course is added to the user&#39;s schedule in real-time and corresponding tables are updated to reflect the change.
-
-
-##
 
 
 
@@ -184,7 +178,7 @@ We have chosen to delegate tasks as follows:
  Che'La and Tyler are in charge of documenting group meetings and relaying information between group members. They also handle the design of the _OfCourse!_ logo. They assist in the planning and coordination of tasks in meetings.
 
 
-##
+
 
 ## User Interface Design
 
@@ -201,6 +195,9 @@ The website is designed to be visually appealing but professional, in particular
 User Interface Diagram
 
 ![alt text](https://github.com/jackierobinson/OfCourse/blob/master/User%20Interface.PNG)
+
+
+
 
 
 ## Database Design
