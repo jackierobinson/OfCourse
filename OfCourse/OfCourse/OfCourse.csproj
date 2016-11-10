@@ -193,6 +193,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\app.js" />
+    <Content Include="App\Components\Calendar\Calendar.html" />
+    <Content Include="App\Components\Calendar\CalendarController.js" />
+    <Content Include="App\Components\Calendar\CalendarDirective.js" />
     <Content Include="App\Components\Schedule\Schedule.html" />
     <Content Include="App\Components\Schedule\ScheduleCardFactory.js" />
     <Content Include="App\Components\Schedule\ScheduleController.js" />
@@ -240,6 +243,7 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App\Components\Offerings\" />
     <Folder Include="App\Components\Shared\" />
     <Folder Include="App_Data\" />
   </ItemGroup>

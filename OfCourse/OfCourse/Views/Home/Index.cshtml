@@ -9,15 +9,22 @@
     <script src="~/Scripts/angular.js"></script>
     <script src="~/App/app.js"></script>
     <script src="~/App/Components/Schedule/ScheduleController.js"></script>
+    <script src="/App/Components/Calendar/CalendarController.js"></script>
     <script src="~/App/Components/Schedule/ScheduleDirective.js"></script>
+    <script src="~/App/Components/Calendar/CalendarDirective.js"></script>
 
 </head>
 <body ng-app="ofCourse">
-    <div class="col-md-8" ng-controller="ScheduleController">
+<div class="row">
+    <div class="col-md-8" ng-controller="CalendarController">
+        <my-Calendar schedule="schedule"></my-Calendar>
+    </div> 
+    <div>This is the course offerings component</div>
+</div>
+<div class="row">
+    <div class="col-md-4" ng-controller="ScheduleController">
         <my-Schedule schedule="schedule"></my-Schedule>
     </div>
-
-    <div>This is the calendar component</div>   
-    <div>This is the course offerings component</div>
+</div>
 </body>
 </html>
