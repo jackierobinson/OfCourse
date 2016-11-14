@@ -1,1 +1,29 @@
-﻿
+﻿.btn-group.offerings-select .btn.dropdown-toggle {
+    color:white;
+    background: #7114ab;
+    border-color: black;
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color: #7114ab;
+    color: white;
+    border-color: black;
+}
+
+.offerings {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    padding-top: 1%;
+}
+
+.offerings-dropdown {
+    padding-bottom: 1%;
+    border-bottom: 1px solid black;
+    margin-bottom: 2%;
+}
+
+.registered {
+    border-top: 1px solid black;
+}

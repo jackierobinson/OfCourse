@@ -1,1 +1,1 @@
-﻿var app = angular.module('ofCourse', []);
+﻿var app = angular.module('ofCourse', ['ui.bootstrap']);
