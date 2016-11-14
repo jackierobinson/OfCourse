@@ -4,7 +4,7 @@ app.directive('myCalendar', function() {
     return {
         restrict: 'E',
         scope: {
-            schedule: "="
+            times: "="
         },
         templateUrl: '/App/Components/Calendar/Calendar.html'
     };
