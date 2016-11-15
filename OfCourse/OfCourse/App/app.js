@@ -1,1 +1,1 @@
-﻿var app = angular.module('ofCourse', ['ui.bootstrap']);
+﻿var app = angular.module('ofCourse', ['ngAnimate', 'ngSanitize','ui.bootstrap']);

@@ -196,6 +196,10 @@
     <Content Include="App\Components\Calendar\Calendar.html" />
     <Content Include="App\Components\Calendar\CalendarController.js" />
     <Content Include="App\Components\Calendar\CalendarDirective.js" />
+    <Content Include="App\Components\Modals\CourseModal.html" />
+    <Content Include="App\Components\Modals\CourseModalController.js" />
+    <Content Include="App\Components\Modals\CourseModalDirective.js" />
+    <Content Include="App\Components\Modals\CourseModalService.js" />
     <Content Include="App\Components\Offerings\Offerings.html" />
     <Content Include="App\Components\Offerings\OfferingsController.js" />
     <Content Include="App\Components\Offerings\OfferingsDirective.js" />
