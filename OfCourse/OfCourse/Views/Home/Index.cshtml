@@ -68,21 +68,23 @@
 
                 </div>
 
-                <ul class="list-group offerings-list">
-                    <li class="list-group-item"><a class="offerings-course" href="" ng-click="$ctrl.openComponentModal()">CSC 1350</a></li>
-                    <li class="list-group-item"><a class="offerings-course" href="" ng-click="$ctrl.openComponentModal()">CSC 1351</a></li>
-                    <li class="list-group-item"><a class="offerings-course" href="" ng-click="$ctrl.openComponentModal()">CSC 3102</a></li>
-                    <li class="list-group-item"><a class="offerings-course" href="" ng-click="$ctrl.openComponentModal()">CSC 3380</a></li>
-                    <li class="list-group-item"><a class="offerings-course" href="" ng-click="$ctrl.openComponentModal()">CSC 4330</a></li>
-                </ul>
+                <table class="table table-hover">
+                    <tbody>
+                        <tr class="table-hover" ng-click="$ctrl.openComponentModal()"><td>CSC 1350</td></tr>
+                        <tr class="table-hover" ng-click="$ctrl.openComponentModal()"><td>CSC 1351</td></tr>
+                        <tr class="table-hover" ng-click="$ctrl.openComponentModal()"><td>CSC 3102</td></tr>
+                        <tr class="table-hover" ng-click="$ctrl.openComponentModal()"><td>CSC 3380</td></tr>
+                        <tr class="table-hover" ng-click="$ctrl.openComponentModal()"><td>CSC 4330</td></tr>
+                    </tbody>
+                </table>
 
                 <div class="registered">
                     <h3>Successfully Registered</h3>
                 </div>
             </div>
-        </div>
-      
+        </div>   
     </div>
+
     <div class="row">
         <div class="col-md-4" ng-controller="ScheduleController">
             <my-Schedule schedule="schedule"></my-Schedule>
