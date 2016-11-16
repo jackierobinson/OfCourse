@@ -34,7 +34,7 @@
         <div class="col-md-5" ng-controller="CalendarController">
             <my-Calendar times="times"></my-Calendar>
         </div>
-        <div class="col-md-5 offerings" ng-controller="CourseModalController as $ctrl" class="modal-demo">
+        <div class="col-md-5 offerings modal-demo" ng-controller="CourseModalController as $ctrl">
             <script type="text/ng-template" id="myModalContent.html">
                 <div class="modal-header">
                     <h3 class="modal-title" id="modal-title">I'm a modal!</h3>
@@ -43,9 +43,43 @@
                 <div class="modal-footer"></div>
             </script>
             <div ng-controller="OfferingsController">
-                <my-Offerings departments="departments"></my-Offerings>
+                <div class="offerings-dropdown">
+
+                    <div class="btn-group offerings-select" uib-dropdown dropdown-append-to-body>
+                        <button id="btn-append-to-to-body" type="button" class="btn btn-primary" uib-dropdown-toggle>
+                            Dept <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-to-body">
+                            <li ng-repeat="dept in departments" role="menuitem"><a href="#">{{dept}}</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group offerings-select" uib-dropdown dropdown-append-to-body>
+                        <button id="btn-append-to-to-body" type="button" class="btn btn-primary" uib-dropdown-toggle>
+                            Number <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-to-body">
+                            <li role="menuitem"><a href="#">Action</a></li>
+                            <li role="menuitem"><a href="#">Another action</a></li>
+                            <li role="menuitem"><a href="#">Something else here</a></li>
+                            <li role="menuitem"><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <ul class="list-group offerings-list">
+                    <li class="list-group-item"><a class="offerings-course" href="" ng-click="$ctrl.openComponentModal()">CSC 1350</a></li>
+                    <li class="list-group-item"><a class="offerings-course" href="" ng-click="$ctrl.openComponentModal()">CSC 1351</a></li>
+                    <li class="list-group-item"><a class="offerings-course" href="" ng-click="$ctrl.openComponentModal()">CSC 3102</a></li>
+                    <li class="list-group-item"><a class="offerings-course" href="" ng-click="$ctrl.openComponentModal()">CSC 3380</a></li>
+                    <li class="list-group-item"><a class="offerings-course" href="" ng-click="$ctrl.openComponentModal()">CSC 4330</a></li>
+                </ul>
+
+                <div class="registered">
+                    <h3>Successfully Registered</h3>
+                </div>
             </div>
-            <button type="button" class="btn btn-default" ng-click="$ctrl.openComponentModal()">Open a component modal!</button>
         </div>
       
     </div>

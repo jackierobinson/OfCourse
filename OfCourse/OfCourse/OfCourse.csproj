@@ -200,8 +200,6 @@
     <Content Include="App\Components\Modals\CourseModalComponent.js" />
     <Content Include="App\Components\Modals\CourseModalController.js" />
     <Content Include="App\Components\Modals\CourseModalInstanceController.js" />
-    <Content Include="App\Components\Modals\CourseModalService.js" />
-    <Content Include="App\Components\Offerings\Offerings.html" />
     <Content Include="App\Components\Offerings\OfferingsController.js" />
     <Content Include="App\Components\Offerings\OfferingsDirective.js" />
     <Content Include="App\Components\Schedule\Schedule.html" />

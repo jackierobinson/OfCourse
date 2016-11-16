@@ -27,3 +27,15 @@
 .registered {
     border-top: 1px solid black;
 }
+
+.offerings-course {
+    color: black;
+}
+
+.offerings-list {
+    text-align: center;
+}
+
+a:hover {
+    color: #7114ab;
+}

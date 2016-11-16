@@ -4,7 +4,8 @@ app.directive('myOfferings', function () {
     return {
         restrict: 'E',
         scope: {
-            departments: "="
+            departments: "=",
+            ctrl: "="
         },
         templateUrl: '/App/Components/Offerings/Offerings.html'
     };
