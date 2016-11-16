@@ -11,9 +11,11 @@
     <script src="~/Scripts/angular-sanitize.js"></script>
     <script src="~/Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
     <script src="~/App/app.js"></script>
+    <script src="~/App/Components/Modals/CourseModalComponent.js"></script>
     <script src="~/App/Components/Schedule/ScheduleController.js"></script>
     <script src="/App/Components/Calendar/CalendarController.js"></script>
     <script src="~/App/Components/Offerings/OfferingsController.js"></script>
+    <script src="~/App/Components/Modals/CourseModalInstanceController.js"></script>
     <script src="~/App/Components/Modals/CourseModalController.js"></script>
     <script src="~/App/Components/Schedule/ScheduleDirective.js"></script>
     <script src="~/App/Components/Calendar/CalendarDirective.js"></script>
@@ -32,15 +34,30 @@
         <div class="col-md-5" ng-controller="CalendarController">
             <my-Calendar times="times"></my-Calendar>
         </div>
-        <div class="col-md-5 offerings" ng-controller="OfferingsController">
-            <my-Offerings departments="departments"></my-Offerings>
+        <div class="col-md-5 offerings" ng-controller="CourseModalController as $ctrl" class="modal-demo">
+            <script type="text/ng-template" id="myModalContent.html">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-title">I'm a modal!</h3>
+                </div>
+                <div class="modal-body" id="modal-body"></div>
+                <div class="modal-footer"></div>
+            </script>
+            <div ng-controller="OfferingsController">
+                <my-Offerings departments="departments"></my-Offerings>
+            </div>
+            <button type="button" class="btn btn-default" ng-click="$ctrl.openComponentModal()">Open a component modal!</button>
         </div>
+      
     </div>
     <div class="row">
         <div class="col-md-4" ng-controller="ScheduleController">
             <my-Schedule schedule="schedule"></my-Schedule>
         </div>
     </div>
+    
+   
+    
+  
 </div>
 
 </body>
