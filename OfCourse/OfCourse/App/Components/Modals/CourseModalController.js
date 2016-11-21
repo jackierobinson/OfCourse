@@ -6,7 +6,7 @@ app.controller('CourseModalController', function ($uibModal, $log) {
 
     $ctrl.animationsEnabled = true;
 
-    $ctrl.open = function (size, parentSelector, course) {
+    $ctrl.open = function (size, parentSelector) {
         var parentElem = parentSelector ?
           angular.element($document[0].querySelector('.modal-demo ' + parentSelector)) : undefined;
         var modalInstance = $uibModal.open({
@@ -20,7 +20,7 @@ app.controller('CourseModalController', function ($uibModal, $log) {
             appendTo: parentElem,
             resolve: {
                 items: function () {
-                    return course;
+                    return $ctrl.items;
                 }
             }
         });
@@ -35,5 +35,4 @@ app.controller('CourseModalController', function ($uibModal, $log) {
     $ctrl.toggleAnimation = function () {
         $ctrl.animationsEnabled = !$ctrl.animationsEnabled;
     };
-
 });
