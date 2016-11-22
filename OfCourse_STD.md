@@ -96,7 +96,7 @@
 | System: | Subsystem: |
 | Designed by: Jackie | Design Date: 11/21/2016 |
 | Executed by: User| Execution Date: |
-| Short Description: Test if department drop down filter offerings by department |                            
+| Short Description: Test if department dropdown filter offerings by department |                            
 
 
 | Precondition N/A |
@@ -121,12 +121,12 @@
 | System: | Subsystem: |
 | Designed by: Jackie | Design Date: 11/21/2016
 | Executed by: | Execution Date: |
-| Short Description: Test if Course Number drop down filter offerings by course number |                            
+| Short Description: Test if Course Number dropdown filter offerings by course number |                            
 
 
 | Precondition |
 | --- |
-| User must select department from the department drop down first |
+| User must select department from the department dropdown first |
 
 
 | Step | Action | Expected System Response | Pass/Fail | Comment |
@@ -172,12 +172,12 @@
 | System: | Subsystem: |
 | Designed by: Jackie | Design Date: 11/21/2016 |
 | Executed by: User | Execution Date: |
-| Short Description: Test if Course Number drop down lists course numbers |                            
+| Short Description: Test if Course Number dropdown lists course numbers |                            
 
 
 | Precondition |
 | --- |
-| User must select department from the department drop down first |
+| User must select department from the department dropdown first |
 
 
 | Step | Action | Expected System Response | Pass/Fail | Comment |
