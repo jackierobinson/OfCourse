@@ -23,8 +23,8 @@
 
 | Precondition |
 | --- |
-| User must not be taking a course at the same day of the week and time |
-| User meets prerequisites for course |
+| User must not be taking another course at the same day of the week and time |
+| User must meet prerequisites for course |
 
 | Step | Action | Expected System Response | Pass/Fail | Comment |
 | --- | --- | --- | --- | --- |
@@ -55,7 +55,7 @@
 
 | Step | Action | Expected System Response | Pass/Fail | Comment |
 | --- | --- | --- | --- | --- |
-| 1 | User clicks on course &quot;CSC 4330&quot; in the offerings | A course model is displayed with the corresponding course information: name, location, description, course number, dept, professor, Enroll button, close button
+| 1 | User clicks on course &quot;CSC 4330&quot; in the offerings | A course model is displayed with the corresponding course information: name, location, description, course number, department, professor, Enroll button, close button
 
 
 
@@ -96,7 +96,7 @@
 | System: | Subsystem: |
 | Designed by: Jackie | Design Date: 11/21/2016 |
 | Executed by: User| Execution Date: |
-| Short Description: Test if department dropdown filter offerings by department |                            
+| Short Description: Test if department dropdown menu filters course offerings by department |                            
 
 
 | Precondition N/A |
@@ -121,7 +121,7 @@
 | System: | Subsystem: |
 | Designed by: Jackie | Design Date: 11/21/2016
 | Executed by: | Execution Date: |
-| Short Description: Test if Course Number dropdown filter offerings by course number |                            
+| Short Description: Test if Course Number dropdown menu filters course offerings by course number |                            
 
 
 | Precondition |
