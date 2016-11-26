@@ -4,7 +4,7 @@
             Dept <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-to-body">
-            <li ng-repeat="dept in departments" role="menuitem"><a href="#">{{dept}}</a></li>
+            <li ng-repeat="course in courses" role="menuitem"><a href="#">{{course.department}}</a></li>
         </ul>
     </div>
 
@@ -13,10 +13,7 @@
             Number <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-to-body">
-            <li role="menuitem"><a href="#">Action</a></li>
-            <li role="menuitem"><a href="#">Another action</a></li>
-            <li role="menuitem"><a href="#">Something else here</a></li>
-            <li role="menuitem"><a href="#">Separated link</a></li>
+            <li ng-repeat="course in courses" role="menuitem"><a href="#">{{course.number}}</a></li>
         </ul>
     </div>
 
@@ -24,13 +21,10 @@
 
 <div ng-controller="CourseModalController as $ctrl">
     <table class="table table-hover">
-
         <tbody>
             <tr class="table-hover" ng-click="$ctrl.viewCourse('sm', course)" ng-repeat="course in courses"><td>{{course.department}} {{course.number}} {{course.name}}</td></tr>
         </tbody>
     </table>
 </div>
-<div class="registered">
-    <h3>Successfully Registered</h3>
-</div>
+
     

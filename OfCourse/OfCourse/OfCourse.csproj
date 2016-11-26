@@ -196,8 +196,6 @@
     <Content Include="App\Components\Calendar\Calendar.html" />
     <Content Include="App\Components\Calendar\CalendarController.js" />
     <Content Include="App\Components\Calendar\CalendarDirective.js" />
-    <Content Include="App\Components\Course\CourseController.js" />
-    <Content Include="App\Components\Course\CourseService.js" />
     <Content Include="App\Components\Modals\CourseModalContent.html" />
     <Content Include="App\Components\Modals\CourseModalController.js" />
     <Content Include="App\Components\Modals\ModalInstanceController.js" />
