@@ -1,21 +1,116 @@
-﻿<div class="table-responsive">
-    <table class="table table-condensed table-bordered">
-        <thead>
+﻿<!doctype html>
+<html>
+<head>
+    <title>Timetable</title>
+    <style type="text/css">
+        body {
+            font-family: arial;
+            
+        }
+          .container {
+    position:center
+   
+    }
+
+        th, td {
+            margin: 0;
+            text-align: center;
+            border-collapse: collapse;
+            outline: 1px solid black;
+        }
+
+        td {
+            background: white;
+            padding: 5px 10px;
+        }
+
+        th {
+            background:rebeccapurple;
+            color: white;
+            padding: 5px 10px;
+        }
+  td:hover {
+            cursor: pointer;
+            background: #666;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <table width="80%" align="center">
+        <div id="head_nav"
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thrusday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+        </div>
+
         <tr>
-            <th>Time</th>
-            <th>Mon</th>
-            <th>Tue</th>
-            <th>Wed</th>
-            <th>Thu</th>
-            <th>Fri</th>
-        </tr>
-        </thead>
+            <th>8:00 - 9:30</th>
 
-        <tbody>
-        <tr ng-repeat="time in times">
-            <th>{{time}}</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            </div>
         </tr>
-        </tbody>
 
+        <tr>
+            <th>9:30 - 10:30</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            </div>
+        </tr>
+
+        <tr>
+            <th>10:30 - 11:30</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+            </div>
+        
+        </tr>
+
+        <tr>
+            <th>11:30 - 12:30</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+            </div>
+        </tr>
+
+        <tr>
+            <th>12:30 - 01:30</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            </div>
+        </tr>
     </table>
-</div>

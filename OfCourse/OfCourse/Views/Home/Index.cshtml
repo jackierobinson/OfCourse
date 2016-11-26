@@ -21,25 +21,30 @@
     <script src="~/App/Components/Offerings/OfferingsDirective.js"></script>
 
 </head>
-<body ng-app="ofCourse">
+<body ng-app="ofCourse"
+       background-color: #0000ff;>
+   
 <div class="container">
     <div class="row">
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-6 col-md-offset-4">
             <img class="img-responsive" alt="Responsive image" src="~/App/Images/OfCourseLogo.PNG" />
         </div>
     </div>
 
     <div class="row">
-        <div class="col-md-5" ng-controller="CalendarController">
+        <div class="col-md-2" ng-controller="CalendarController">
+        
             <my-Calendar times="times"></my-Calendar>
         </div>
-        <div class="col-md-5 offerings" ng-controller="OfferingsController">          
+        <div class="col-md-5 col-md-offset-5 offerings" ng-controller="OfferingsController">          
                 <my-Offerings courses="courses"></my-Offerings>
         </div>   
     </div>
 
     <div class="row">
-        <div class="col-md-4" ng-controller="ScheduleController">
+        <div class="col-md-12 col-md-offset-1" ng-controller="ScheduleController">
+            <div style="margin-top:20px"></div>
+            <div style="border-color: rebeccapurple"></div>
             <my-Schedule schedule="schedule"></my-Schedule>
         </div>
     </div>

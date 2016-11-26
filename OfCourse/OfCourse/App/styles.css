@@ -2,20 +2,26 @@
     color:white;
     background: #7114ab;
     border-color: black;
+
 }
 
 .panel > .panel-heading {
-    background-image: none;
-    background-color: #7114ab;
-    color: white;
-    border-color: black;
+    background-image:none;
+    background-color:  #7114ab;
+    color: black;
+    border-color: rebeccapurple;
+   
+   
 }
 
 .offerings {
-    border-color: black;
+    background: white;
+    border-color: rebeccapurple;
     border-width: 1px;
     border-style: solid;
     padding-top: 1%;
+    border-style: solid;
+    border-width: 5px;
 }
 
 .offerings-dropdown {
@@ -26,6 +32,8 @@
 
 .registered {
     border-top: 1px solid black;
+    
+  
 }
 
 .offerings-course {
@@ -34,8 +42,24 @@
 
 .offerings-list {
     text-align: center;
+    
 }
 
 a:hover {
     color: #7114ab;
+    border-style: solid;
+    border-width: 5px;
 }
+
+body {
+    background-image:url("Images/lsu.jpg");
+    background-position:center;
+    width:700px;
+    height:700px;
+    background-size:cover;
+	z-index:1;
+
+}
+
+
+

@@ -207,6 +207,7 @@
     <Content Include="App\Components\Schedule\ScheduleCardFactory.js" />
     <Content Include="App\Components\Schedule\ScheduleController.js" />
     <Content Include="App\Components\Schedule\ScheduleDirective.js" />
+    <Content Include="App\Images\lsu.jpg" />
     <Content Include="App\Images\OfCourseLogo.PNG" />
     <Content Include="App\styles.css" />
     <Content Include="Content\bootstrap-theme.css" />
