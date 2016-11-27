@@ -7,9 +7,9 @@
 
 .panel > .panel-heading {
     background-image:none;
-    background-color:  #7114ab;
-    color: black;
-    border-color: rebeccapurple;
+    background-color:  rebeccapurple;
+    color: white;
+    border-bottom: 3px solid black;
    
    
 }
@@ -60,6 +60,16 @@ body {
 	z-index:1;
 
 }
+.cell {
+    background: yellow;
+}
 
+.mc{
+    border: 3px solid rebeccapurple;
+}
 
+.enroll{
+    padding-left: 40%;
+    
+}
 
