@@ -22,7 +22,7 @@
 <div ng-controller="CourseModalController as $ctrl">
     <table class="table table-hover">
         <tbody>
-            <tr class="table-hover" ng-click="$ctrl.viewCourse('sm', course)" ng-repeat="course in courses"><td>{{course.department}} {{course.number}} {{course.name}}</td></tr>
+            <tr ng-click="$ctrl.viewCourse('sm', course)" ng-repeat="course in courses"><td>{{course.department}} {{course.number}} {{course.name}}</td></tr>
         </tbody>
     </table>
 </div>

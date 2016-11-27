@@ -30,6 +30,24 @@ app.controller('OfferingsController', ['$scope', function ($scope) {
             "time": "5:00-6:30 MW",
             "professor": "Mahmoud A",
             "description": "Prereq.: CSC 1254 or CSC 1351 and credit or concurrent enrollment in CSC 2259 or EE 2740. Description and utilization of formal ADT representations, especially those on lists, sets and graphs; time and space analysis of recursive and nonrecursive algorithms, including graph and sorting algorithms; algorithm design techniques."
-        }
+        },
+         {
+             "department": "MATH",
+             "number": 1550,
+             "name": "Calculus",
+             "location": "Lockett Hall",
+             "time": "5:30-6:30 MTWTHF",
+             "professor": "Terri W",
+             "description": "Prereq.: CSC 1254 or CSC 1351 and credit or concurrent enrollment in CSC 2259 or EE 2740. Description and utilization of formal ADT representations, especially those on lists, sets and graphs; time and space analysis of recursive and nonrecursive algorithms, including graph and sorting algorithms; algorithm design techniques."
+         },
+          {
+              "department": "ENGL",
+              "number": 2000,
+              "name": "English Composition",
+              "location": "Tureaud Hall",
+              "time": "3:00-4:30 TTH",
+              "professor": "Mahmoud A",
+              "description": "Prereq.: CSC 1254 or CSC 1351 and credit or concurrent enrollment in CSC 2259 or EE 2740. Description and utilization of formal ADT representations, especially those on lists, sets and graphs; time and space analysis of recursive and nonrecursive algorithms, including graph and sorting algorithms; algorithm design techniques."
+          }
     ];
 }]);

@@ -4,8 +4,6 @@ app.controller('CourseModalController', function ($scope, $uibModal, $log) {
 
     var $ctrl = this;
 
- 
-
     $ctrl.animationsEnabled = true;
 
     $ctrl.viewCourse = function (size, selectedCourse) {
