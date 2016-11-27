@@ -1,6 +1,6 @@
 ﻿<div class="panel panel-default">
     <div class="panel-heading">
-        <h4>Today's Schedule</h4>
+        <h4>Daily Schedule</h4>
         <button class="btn btn-default" type="submit">Monday</button>
         <button class="btn btn-default" type="submit">Tuesday</button>
         <button class="btn btn-default" type="submit">Wednesday</button>
@@ -12,7 +12,7 @@
         <ul class="list-group" ng-repeat="course in schedule">
             <li class="list-group-item">
                 <h4>{{course.name}}</h4>
-                <p>{{course.time}}</p>
+                <p>{{course.startTime}}-{{course.endTime}} {{course.days}}</p>
                 <p>{{course.location}}</p>
             </li>
         </ul>

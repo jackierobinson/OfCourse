@@ -10,13 +10,13 @@
            </tr>
 <tr> <td>{{course.description}} </td></tr>
            <tr> <td>{{course.professor}} </td></tr>
-           <tr> <td>{{course.time}} </td></tr>
+           <tr> <td>{{course.startTime}}-{{course.endTime}} {{course.days}} </td></tr>
            <tr> <td>{{course.location}} </td></tr>
         </tbody>
    </table>
-    <div class="enroll"><button class="btn btn-default">Enroll</button></div>
+    <div class="enroll"><button class="btn btn-default" ng-click="addToSchedule(course)">Enroll</button></div> <span ng-show="enrolled">Successfully Registered</span>
    
-
+    {{work}}
   
 
   
