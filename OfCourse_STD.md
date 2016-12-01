@@ -109,7 +109,7 @@
 | --- |
 
 
-NOTE: Unable to get function working properly. Please ignore 
+
 | Test Case #: 5 | Test Case Name: Department Dropdown Filter
 | --- | --- |
 | System: | Subsystem: |
@@ -134,7 +134,6 @@ NOTE: Unable to get function working properly. Please ignore
 
 
 
-NOTE: Unable to get function working properly. Please ignore
 | Test Case #: 6 | Test Case Name: Course Number Dropdown Filter |
 | --- | --- |
 | System: | Subsystem: |
@@ -161,7 +160,7 @@ NOTE: Unable to get function working properly. Please ignore
 
 
 
-NOTE: Unable to get function working properly. Please ignore
+
 | Test Case #: 7 | Test Case Name: Department Dropdown |
 | --- | --- |
 | System: | Subsystem: |
@@ -185,7 +184,7 @@ NOTE: Unable to get function working properly. Please ignore
 
 
 
-NOTE: Unable to get function working properly. Please ignore
+
 | Test Case #: 8 | Test Case Name: Course Number Dropdown |
 | --- | --- |
 | System: | Subsystem: |
@@ -208,7 +207,7 @@ NOTE: Unable to get function working properly. Please ignore
 | Post Condition N/A |
 | --- |
 
-NOTE: Unable to get function working properly. Please ignore
+
 | Test Case #: 9 | Test Case Name: Enroll in Course|
 | --- | --- |
 | System: | Subsystem: |
