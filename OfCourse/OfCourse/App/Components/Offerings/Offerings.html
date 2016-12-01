@@ -1,28 +1,36 @@
-﻿<div class="offerings-dropdown">
+﻿<!--
+    Note: Excluded this feature due to time constraints
+    Feature Goal: To produce a dropdown menu which would organize classes based on:
+        1. Department
+        2. Course Number
+-->
+
+<!--<div class="offerings-dropdown">
     <div class="btn-group offerings-select" uib-dropdown dropdown-append-to-body>
-        <button id="btn-append-to-to-body" type="button" class="btn btn-primary" uib-dropdown-toggle>
+        <button id="deptButton" type="button" class="btn btn-primary" uib-dropdown-toggle onclick="filterBasedOnDept()">
             Dept <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-to-body">
-            <li ng-repeat="course in courses" role="menuitem"><a href="#">{{course.department}}</a></li>
+            //<li ng-repeat="course in courses" role="menuitem"><a href="#">{{course.department}}</a></li>
         </ul>
     </div>
 
     <div class="btn-group offerings-select" uib-dropdown dropdown-append-to-body>
-        <button id="btn-append-to-to-body" type="button" class="btn btn-primary" uib-dropdown-toggle>
+        <button id="numberButton" type="button" class="btn btn-primary" uib-dropdown-toggle>
             Number <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-to-body">
-            <li ng-repeat="course in courses" role="menuitem"><a href="#">{{course.number}}</a></li>
+            //<li ng-repeat="course in courses" role="menuitem"><a href="#">{{course.number}}</a></li>
         </ul>
     </div>
 
-</div>
-
+</div> -->
 <div ng-controller="CourseModalController as $ctrl">
     <table class="table table-hover">
         <tbody>
             <tr ng-click="$ctrl.viewCourse('sm', course)" ng-repeat="course in courses"><td>{{course.department}} {{course.number}} {{course.name}}</td></tr>
         </tbody>
     </table>
-</div>   
+</div>
+
+    

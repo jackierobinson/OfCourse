@@ -1,21 +1,118 @@
-﻿<div class="panel panel-default">
+﻿<!-- This page is the daily schedule for the application -->
+<style>
+   ul {
+       list-style-type: none;
+      }
+</style>
+<script type="text/javascript" src="http://yourjavascript.com/6321171442/courses.js"></script>﻿
+<script>
+/* A JSON array which contains the course information for those which are applicable based on day */
+var courseDayList = new Array();
+
+    /* Converts time into an integer in military time for further comparison
+    @param time is the time of the course
+    @return numericTime is the integer equivalent of course, expressed in military time
+    */
+convertTime = function(time) {
+  var numericTime = 0;
+  if (time == "8:30") numericTime = 830;
+  if (time == "9:30") numericTime = 930;
+  if (time == "10:30") numericTime = 1030;
+  if (time == "11:30") numericTime = 1130;
+  if (time == "12:30") numericTime = 1230;
+  return numericTime;
+}
+/* Sorts a list using the bubble sort */
+bubbleSort = function() {
+    var swapped;
+    do {
+      swapped = false;
+      for (var i = 0; i < courseDayList.length - 1; i++) {
+        var time1 = convertTime(courseDayList[i].Start_Time);
+        var time2 = convertTime(courseDayList[i + 1].Start_Time);
+        if (time1 > time2) {
+          var temp = courseDayList[i];
+          courseDayList[i] = courseDayList[i + 1];
+          courseDayList[i + 1] = temp;
+          swapped = true;
+        }
+      }
+    } while (swapped);
+  }
+/* Prints the courses by inserting them into a list */
+  printCourses = function() {
+    var counter = 0;
+    while (counter <= courseDayList.length - 1) // Goes through the entire list of applicable courses
+    {
+      // Creates objects which hold appropriate information
+      var courseName = courseDayList[counter].dept + " " + courseDayList[counter].id + " - " + courseDayList[counter].Full_Name;
+      var courseTime = courseDayList[counter].Start_Time + " - " + courseDayList[counter].End_Time;
+      var courseLocation = courseDayList[counter].Location;
+      // Creates a list object, and appends above objects into it
+      var text;
+      var list = document.getElementById('list');
+      var entry = document.createElement('li');
+      var h4 = document.createElement('h4');
+      text = document.createTextNode(courseName);
+      h4.appendChild(text);
+      entry.appendChild(h4);
+      var p1 = document.createElement('p');
+      text = document.createTextNode(courseTime);
+      p1.appendChild(text);
+      entry.appendChild(p1);
+      var p2 = document.createElement('p');
+      text = document.createTextNode(courseLocation);
+      p2.appendChild(text);
+      entry.appendChild(p2);
+      list.appendChild(entry);
+
+      counter++; // Increments counter to continue to next one
+    }
+
+  }
+    /* Displays course on the appropriate day depending on the day selected
+    @param day is the day selected from the button
+    */
+showCourseFromDay = function(day) {
+
+	//Clear existing records
+  var list = document.getElementById('list');
+  while (list.firstChild)
+      list.removeChild(list.firstChild);
+
+  var i;
+  for (i = 0; i < courses.length; i++) {
+    var course = courses[i];
+    console.log(course);
+    if (course.Attendance == day) // Checks to see if course matches attendance day
+    {
+      courseDayList.push(course);
+    }
+  }
+
+  bubbleSort();
+  printCourses();
+  courseDayList = new Array();
+}
+
+</script>
+<div class="panel panel-default">
     <div class="panel-heading">
-        <h4>Daily Schedule</h4>
-        <button class="btn btn-default" type="submit">Monday</button>
-        <button class="btn btn-default" type="submit">Tuesday</button>
-        <button class="btn btn-default" type="submit">Wednesday</button>
-        <button class="btn btn-default" type="submit">Thursday</button>
-        <button class="btn btn-default" type="submit">Friday</button>
+        <h4>Today's Schedule</h4>
+        <button class="btn btn-default" type="submit" onclick="showCourseFromDay('Monday')">Monday</button>
+        <button class="btn btn-default" type="submit" onclick="showCourseFromDay('Tuesday')">Tuesday</button>
+        <button class="btn btn-default" type="submit" onclick="showCourseFromDay('Wednesday')">Wednesday</button>
+        <button class="btn btn-default" type="submit" onclick="showCourseFromDay('Thursday')">Thursday</button>
+        <button class="btn btn-default" type="submit" onclick="showCourseFromDay('Friday')">Friday</button>
     </div>
     <div class="panel-body">
         <div style="border-color:rebeccapurple"></div>
-        <ul class="list-group" ng-repeat="course in schedule">
+        <ul id="list" class="list-group">
             <li class="list-group-item">
-                <h4>{{course.name}}</h4>
-                <p>{{course.startTime}}-{{course.endTime}} {{course.days}}</p>
-                <p>{{course.location}}</p>
+              <h4 id="cName"></h4>
+              <p id="cTime"></p>
+              <p id="cLocation"></p>
             </li>
         </ul>
     </div>
 </div>
-

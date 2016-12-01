@@ -1,8 +1,10 @@
-﻿<!doctype html>
+﻿<!-- This page contains the weekly schedule for the application -->
 <html>
 <head>
-   
-    <title>Timetable</title>
+<script type="text/javascript" src="http://yourjavascript.com/6321171442/courses.js"></script>
+<title>Timetable</title>
+
+    
     <style type="text/css">
         body {
             font-family: arial;
@@ -32,9 +34,31 @@
         }
  
     </style>
-
 </head>
 <body>
+    <script>    
+        /* Enters into respective spots the course based on its attendance day, and start time
+        @param attend is the attendance day
+        @param startTime is the start time of the course
+        @param tag is the tag in the HTML table element
+        */
+        function plotCourse(attend, startTime, tag)
+        {
+            var i;
+            var square = document.getElementById(tag);
+            for (i =0; i<courses.length; i++)
+            {
+                var course = courses[i];
+                console.log(course);
+                if (course.Attendance == attend && course.Start_Time == startTime) // Determines if course meets criteria; if so, is entered into slot
+                {
+                    square.innerHTML = " ";
+                    square.innerHTML = course.dept + " " + course.id + "<br /> " + course.Location;
+                }
+            }
+        }
+    </script>
+    <!-- A table element which distributes courses into appropriate spots-->
     <table  align="center" class="table-hover">
         
             <tr>
@@ -44,73 +68,169 @@
                 <th>Wednesday</th>
                 <th>Thrusday</th>
                 <th>Friday</th>
-               
+              
             </tr>
-        
-
+        <!-- Designates courses from 8:00 to 9:30 -->
         <tr>
             <th>8:00 - 9:30</th>
-
-            <td class="cell">CSC 3380</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            
-            
+            <td id="M8t930">
+            <script>
+                plotCourse("Monday", "8:00", "M8t930");
+            </script>
+            </td>
+            <td id="Tu8t930">
+            <script>
+                plotCourse("Tuesday", "8:30", "Tu8t930");
+            </script>
+            </td>
+            <td id="W8t930">
+                <script>
+                    plotCourse("Wednesday", "8:30", "W8t930");
+                </script>
+            </td>
+            <td id="Th8t930">
+                <script>
+                    plotCourse("Thursday", "8:30", "Th8t930");
+                </script>
+            </td>
+            <td id="F8t930">
+                <script>
+                plotCourse("Friday", "8:30", "F8t930");
+                </script>
+            </td>   
         </tr>
-        
+        <!-- Designates courses from 9:00 to 10:30 -->
         <tr>
             <th>9:30 - 10:30</th>
 
-            <td></td>
-            <td class="cell">CSC 4330</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td id="M9t1030">
+                <script>
+                plotCourse("Monday", "9:30", "M9t1030");
+                </script>
+            </td>
+            <td id="Tu9t1030">
+                <script>
+                plotCourse("Tuesday", "9:30", "Tu9t1030");
+                </script>
+            </td>
+            <td id="W9t1030">
+                <script>
+                plotCourse("Wednesday", "9:30", "W9t1030");
+                </script>
+            </td>
+            <td id="Th9t1030">
+                <script>
+                plotCourse("Thursday", "9:30", "Th9t1030");
+                </script>
+            </td>
+            <td id="F9t1030">
+                <script>
+                plotCourse("Friday", "9:30", "F9t1030");
+                </script>
+            </td>
        
             
         </tr>
-
+        <!-- Designates courses from 10:30 to 11:30 -->
         <tr>
             <th>10:30 - 11:30</th>
 
-            <td></td>
-            <td></td>
-            <td class="cell">CSC 2260</td>
-            <td></td>
-            <td></td>
+            <td id="M1030t1130">
+                <script>
+                plotCourse("Monday", "10:30", "M1030t1130");
+                </script>
+            </td>
+            <td id="Tu1030t1130">
+                <script>
+                    plotCourse("Tuesday", "10:30", "Tu1030t1130");
+                </script>
+            </td>
+            <td id="W1030t1130">
+                <script>
+                    plotCourse("Wednesday", "10:30", "W1030t1130");
+                </script>
+            </td>
+            <td id="Th1030t1130">
+                <script>
+                    plotCourse("Thursday", "10:30", "Th1030t1130");
+                </script>
+            </td>
+            <td id="F1030t1130">
+                <script>
+                    plotCourse("Friday", "10:30", "F1030t1130");
+                </script>
+            </td>
 
 
            
         
         </tr>
-
+        <!-- Designates courses from 11:30 to 12:30 -->
         <tr>
             <th>11:30 - 12:30</th>
-
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="cell">MATH 1550</td>
-            <td></td>
+            
+            <td id="M1130t1230">
+                <script>
+                plotCourse("Monday", "11:30", "M1130t1230");
+                </script>
+            </td>
+            <td id="Tu1130t1230">
+                <script>
+                    plotCourse("Tuesday", "11:30", "Tu1130t1230");
+                </script>
+            </td>
+            <td id="W1130t1230">
+                <script>
+                    plotCourse("Wednesday", "11:30", "W1130t1230");
+                </script>
+            </td>
+            <td id="Th1130t1230">
+                <script>
+                    plotCourse("Thursday", "11:30", "Th1130t1230");
+                </script>
+            </td>
+            <td id="F1130t1230">
+                <script>
+                    plotCourse("Friday", "11:30", "F1130t1230");
+                </script>
+            </td>
           
 
           
         </tr>
-
+        <!-- Designates courses from 12:30 to 1:30 -->
         <tr>
             <th>12:30 - 01:30</th>
-
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="cell">SW 1100</td>
+            <td id="M1230t130">
+                <script>
+                plotCourse("Monday", "12:30", "M1230t130");
+                </script>
+            </td>
+            <td id="Tu1230t130">
+                <script>
+                    plotCourse("Tuesday", "12:30", "Tu1230t130");
+                </script>
+            </td>
+            <td id="W1230t130">
+                <script>
+                    plotCourse("Wednesday", "12:30", "W1230t130");
+                </script>
+            </td>
+            <td id="Th1230t130">
+                <script>
+                    plotCourse("Thursday", "12:30", "Th1230t130");
+                </script>
+            </td>
+            <td id="F1230t130">
+                <script>
+                    plotCourse("Friday", "12:30", "F1230t130");
+                </script>
+            </td>
            
             
             
         </tr>
     </table>
+    
     </body>
     </html>

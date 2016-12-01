@@ -1,22 +1,191 @@
-﻿<div class="mc">
+﻿<!-- This page contains the enrollment feature of the application -->
+<script type="text/javascript" src="http://yourjavascript.com/6321171442/courses.js"></script>
+<script>
+    /* This object serves as a JSON array to search the list of courses offered to enroll in for specific information when neccessary */
+    var catalog =
+            [
+            {
+                "department": "CSC",
+                "number": "3102",
+                "name": "Advanced Data Structures and Algorithm Analysis",
+                "location": "Tureaud Hall",
+                "time": "11:30-12:30",
+                "Attendance":"Tuesday",
+                "professor": "Kooima",
+                "description": "Prereq.: CSC 1254 or CSC 1351 and credit or concurrent enrollment in CSC 2259 or EE 2740. Description and utilization of formal ADT representations, especially those on lists, sets and graphs; time and space analysis of recursive and nonrecursive algorithms, including graph and sorting algorithms; algorithm design techniques."
+            },
+            {
+                "department": "CSC",
+                "number": "1200",
+                "name": "Ethics in Computing",
+                "location": "Tureaud Hall",
+                "time": "10:30-11:30",
+                "Attendance":"Wednesday",
+                "professor": "Busch",
+                "description": "Prereq.: CSC 1254 or CSC 1351 and credit or concurrent enrollment in CSC 2259 or EE 2740. Description and utilization of formal ADT representations, especially those on lists, sets and graphs; time and space analysis of recursive and nonrecursive algorithms, including graph and sorting algorithms; algorithm design techniques."
+            },
+            {
+                "department": "CSC",
+                "number": "4330",
+                "name": "Software Systems Development",
+                "location": "Tureaud Hall",
+                "time": "12:30-1:30",
+                "Attendance":"Thursday",
+                "professor": "Mahmoud",
+                "description": "Prereq.: CSC 1254 or CSC 1351 and credit or concurrent enrollment in CSC 2259 or EE 2740. Description and utilization of formal ADT representations, especially those on lists, sets and graphs; time and space analysis of recursive and nonrecursive algorithms, including graph and sorting algorithms; algorithm design techniques."
+            },
+             {
+                 "department": "MATH",
+                 "number": "1550",
+                 "name": "Calculus",
+                 "location": "Lockett Hall",
+                 "time": "12:30-1:30",
+                 "Attendance":"Wednesday",
+                 "professor": "Terri",
+                 "description": "Prereq.: CSC 1254 or CSC 1351 and credit or concurrent enrollment in CSC 2259 or EE 2740. Description and utilization of formal ADT representations, especially those on lists, sets and graphs; time and space analysis of recursive and nonrecursive algorithms, including graph and sorting algorithms; algorithm design techniques."
+             },
+              {
+                  "department": "ENGL",
+                  "number": "2000",
+                  "name": "English Composition",
+                  "location": "Tureaud Hall",
+                  "time": "09:30-10:30",
+                  "Attendance":"Friday",
+                  "professor": "McKinnon",
+                  "description": "Prereq.: CSC 1254 or CSC 1351 and credit or concurrent enrollment in CSC 2259 or EE 2740. Description and utilization of formal ADT representations, especially those on lists, sets and graphs; time and space analysis of recursive and nonrecursive algorithms, including graph and sorting algorithms; algorithm design techniques."
+              }
+            ];
+
+    var schedule = courses; // Copies data from schedule for search purposes.
+    
+    /* Checks to see if a time conflict would occur with existing courses
+    @param time is the start time
+    @return flag is whether the course would violate time conflictions
+    */
+    var checkTime = function(time)
+    {
+        var flag = true;
+        var i;
+        for (i = 0; i<schedule.length; i++)
+        {
+            if (time == schedule[i].Start_Time)
+                flag = false;
+        }
+        return flag;
+    }
+
+    /* Get the attendance day of the course by searching thru the catalog
+    @param dept is the department
+    @param id is the course id
+    @return Attendance is the attendance day
+    */
+    var getAttendance = function(dept, id)
+    {
+        var i;
+        for (i = 0; i<catalog.length; i++)
+        {
+            if (catalog[i].department == dept && catalog[i].number == id)
+            {
+                return catalog[i].Attendance;
+            }
+        }
+    }
+    /* This function would enroll a user into a course by the following prcedures:
+        1. Checks to see if the user is already in the course by dept and id
+        2. Checks to see if the user does not have another course that causes time conflicts
+        3. Places the course into the schedule and refreshes the page to reflect the changes
+
+        *NOTE: Due to the inability to set a database to store changes, we were unable to implement the feature properly. HOWEVER, the functionality below would meet the requirements.
+        */
+    var enrollInCourse = function()
+    {
+        var node; // Creates node object to get data from each element
+        node = document.getElementById("cDept");
+        dept = node.textContent;
+
+        node = document.getElementById("cNum");
+        num = node.textContent;
+
+        node = document.getElementById("cName");
+        name = node.textContent;
+
+        node = document.getElementById("cDescription");
+        description = node.textContent;
+
+        node = document.getElementById("cProf");
+        prof = node.textContent;
+
+        node = document.getElementById("cTime");
+        time = node.textContent;
+
+        node = document.getElementById("cLoc");
+        loc = node.textContent;
+
+        var i;
+        var flag;
+        for (i = 0; i < schedule.length; i++) // Checks to see if the course is already in the schedule
+        {
+            if (schedule[i].dept == dept && schedule[i].id == num)
+            {
+                flag = false;
+            }
+        }
+        flag = checkTime(time.substring(0,4)); // Checks to see if a possible time conflict would occur
+        if (flag == true)
+        {
+            alert("Succesfully registered in " + dept + " " + num + "!"); // Adds the course into the schedule and refreshes page to reflect changes
+            courses.push({
+                "dept": dept,
+                "id": id,
+                "instructor": prof,
+                "Location": loc,
+                "Start_Time": time.substring(0,4),
+                "End_Time": time.substring(6,10),
+                "Attendance": getAttendance(dept, num),
+                "Full_Name": name
+            });
+            location.reload();
+
+        }
+        else // Produces message if user is already in course
+        {
+            alert("Cannot enroll in course!");
+        }
+
+    }
+
+</script>
+
+
+
+<!-- Constructs the table object which contains information about each course, including:
+    * Department
+    * Course ID
+    * Name (Full)
+    * Description of course
+    * Instructor
+    * Time period
+    * Location
+-->
+<div class="mc">
 
    <table class="table">
        <tbody class="border">
            <tr>
                <td>
-                       <p>{{course.department}} {{ course.number}}</p>
-                       <p>{{course.name}}</p>    
+                       <p><span id="cDept">{{course.department}}</span> <span id="cNum">{{course.number}}</span></p>
+                       <p><span id="cName">{{course.name}}</span></p>    
                </td>
            </tr>
-<tr> <td>{{course.description}} </td></tr>
-           <tr> <td>{{course.professor}} </td></tr>
-           <tr> <td>{{course.startTime}}-{{course.endTime}} {{course.days}} </td></tr>
-           <tr> <td>{{course.location}} </td></tr>
+<tr> <td id="cDescription">{{course.description}} </td></tr>
+           <tr> <td id="cProf">{{course.professor}} </td></tr>
+           <tr> <td id="cTime">{{course.time}} </td></tr>
+           <tr> <td id="cLoc">{{course.location}} </td></tr>
         </tbody>
    </table>
-    <div class="enroll"><button class="btn btn-default" ng-click="addToSchedule(course)">Enroll</button></div> <span ng-show="enrolled">Successfully Registered</span>
+    <div class="enroll"><button class="btn btn-default" onclick="enrollInCourse()">Enroll</button></div>
    
-    {{work}}
+
   
 
   

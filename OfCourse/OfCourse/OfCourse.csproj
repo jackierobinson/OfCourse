@@ -203,10 +203,9 @@
     <Content Include="App\Components\Offerings\OfferingsController.js" />
     <Content Include="App\Components\Offerings\OfferingsDirective.js" />
     <Content Include="App\Components\Schedule\Schedule.html" />
-    <Content Include="App\Components\Schedule\ScheduleFactory.js" />
+    <Content Include="App\Components\Schedule\ScheduleCardFactory.js" />
     <Content Include="App\Components\Schedule\ScheduleController.js" />
     <Content Include="App\Components\Schedule\ScheduleDirective.js" />
-    <Content Include="App\Components\Shared\CourseTimeFactory.js" />
     <Content Include="App\Images\lsu.jpg" />
     <Content Include="App\Images\OfCourseLogo.PNG" />
     <Content Include="App\styles.css" />
@@ -259,6 +258,7 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App\Components\Shared\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
