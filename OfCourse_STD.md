@@ -66,8 +66,31 @@
 
 
 
+| Test Case #: 3 | Test Case Name: Daily Schedule Selection
+| --- | --- |
+| System: | Subsystem: |
+| Designed by: Kameron | Design Date: 11/23/2016 |
+| Executed by: User | Execution Date:|
+| Short Description: Test if the appropriate courses appear when the day is selected |                               
 
-| Test Case #: 3 | Test Case Name: Close Course Modal
+
+| Precondition: User be enrolled in courses|
+| --- |
+
+| Step | Action | Expected System Response | Pass/Fail | Comment |
+| --- | --- | --- | --- | --- |
+| 1 | User clicks on "Wednesday" | 
+
+
+
+
+| Post Condition: Two courses should appear [THTR 1020 and MATH 1550], sorted by time and shown with corresponding information |
+| --- |
+
+
+
+
+| Test Case #: 4 | Test Case Name: Close Course Modal
 | --- | --- |
 | System: | Subsystem: |
 | Designed by: Jackie | Design Date: 11/21/2016 |
@@ -90,8 +113,8 @@
 | --- |
 
 
-
-| Test Case #: 4 | Test Case Name: Department Dropdown Filter
+* NOTE: Unable to get function working properly. Please ignore
+| Test Case #: 5 | Test Case Name: Department Dropdown Filter
 | --- | --- |
 | System: | Subsystem: |
 | Designed by: Jackie | Design Date: 11/21/2016 |
@@ -115,8 +138,8 @@
 
 
 
-
-| Test Case #: 5 | Test Case Name: Course Number Dropdown Filter |
+* NOTE: Unable to get function working properly. Please ignore
+| Test Case #: 6 | Test Case Name: Course Number Dropdown Filter |
 | --- | --- |
 | System: | Subsystem: |
 | Designed by: Jackie | Design Date: 11/21/2016
@@ -142,8 +165,8 @@
 
 
 
-
-| Test Case #: 6 | Test Case Name: Department Dropdown |
+* NOTE: Unable to get function working properly. Please ignore
+| Test Case #: 7 | Test Case Name: Department Dropdown |
 | --- | --- |
 | System: | Subsystem: |
 | Designed by: Jackie | Design Date: 11/21/2016 |
@@ -166,8 +189,8 @@
 
 
 
-
-| Test Case #: 7 | Test Case Name: Course Number Dropdown |
+* NOTE: Unable to get function working properly. Please ignore
+| Test Case #: 8 | Test Case Name: Course Number Dropdown |
 | --- | --- |
 | System: | Subsystem: |
 | Designed by: Jackie | Design Date: 11/21/2016 |
@@ -187,4 +210,28 @@
 
 
 | Post Condition N/A |
+| --- |
+
+* NOTE: Unable to get function working properly. Please ignore
+| Test Case #: 9 | Test Case Name: Enroll in Course|
+| --- | --- |
+| System: | Subsystem: |
+| Designed by: Kameron | Design Date: 11/25/2016 |
+| Executed by: User | Execution Date: |
+| Short Description: Test is enrollment feature behaves properly |                            
+
+
+| Precondition |
+| --- |
+| User must not be enrolled in course |
+
+
+| Step | Action | Expected System Response | Pass/Fail | Comment |
+| --- | --- | --- | --- | --- |
+| 1 | User selects the course "CSC 1200 - Ethics in Computing Science" |  
+| 2 | User selects "Enroll"  |
+
+
+
+| Post Condition: Course would be added onto schedule; page refreshes; calendar and daily schedule would reflect changes |
 | --- |
