@@ -99,8 +99,7 @@ Teamwork was essential towards the completion of the project. To facilitate prod
 
 
 ##Project Schedule
-	![Image of Project Schedule]
-	(https://github.com/jackierobinson/OfCourse/blob/master/Project%20Schedule.PNG)
+![alt text](https://github.com/jackierobinson/OfCourse/blob/master/project_schedule.PNG)
 
 The development of OfCourse! (derived from the graph listed above), was as follows:
  - September
@@ -166,16 +165,26 @@ Time: 3pm-4pm
 
 ##Project Personnel
 
-Tyler Anderson
-	I worked on the markdown for all the documents, while also editing them.  I designed the logo with the help of Che’La. I met with the TA to discuss the SRS document to see how we could make it better. I didn’t make the meeting on October 16th because I had another mandatory meeting for the organization that I am apart of. I was told that I didn’t need to be at the meeting on November 16th because they were just meeting to get on the same page for a part of the project I wasn’t a part of.
-Che’La Fleming
-	I also worked on the markdown for all documentation turned in. I designed the initial OfCourse! logo and worked on the official logo with Tyler. I was also a part of the meeting with the TA for the SRS document and drafted the revisions after the meeting. I did not participate in the November 16th meeting because it was only to scheduled to clarify some things for the back-end and front-end of this project.
-Nina Mohammed
-	I worked on the design aspect of our project, by adding the background picture and styling some of the components such as the calendar, course offerings, and the schedule boxes. Using HTML5 and CSS3, I added color to the components, positioned them on the page and tried to make the calendar more visually appealing. I missed the meeting on October 12th, because I was unable to come back to school.
-Kameron Smart
-	I performed a number of tasks, including: initiating documents for drafting (notably the SRS and SDD documents); assisting in defining the scope of our project; communicating between the various sections in our group for coherency purposes; outlining and developing the back-end capabilities of the application (including refactoring, restructuring, and commenting); designing the demonstration video for the presentation, and; presenting the application to the TA during the code implementation portion of the assignment. As co-project manager, I attended every meeting to discuss features, design, and implementation and provide updates.  
-Phillip Breland
-	I advised on system requirements and technologies, provided back-end code debugging and DIA diagrams, and co-designed the initial schema. I designed a couple of the algorithms used in the back-end. I was not able to attend the initial meeting on October 3rd because of my work schedule.
-Jackie Robinson
-	I worked on creating the calendar, course offerings, and daily schedule components with Bootstrap, AngularUI, and AngularJS. More specifically, I created the dropdowns, tables, and modals. I created a model for a course object and created my components with the ability to bind data from the course object to the view. I created the GitHub repository and tried to maintain a steady flow of commits throughout the project to keep the team updated with the user interface. I created the project in Visual Studio and the project skeleton. I created all the tests on the Software Testing Document and proofread the SRS document. I created the theme and majority of the slides for the presentation. I recommended we use Trello to maintain our Agile board. 
+**Tyler Anderson**
 
+I worked on the markdown for all the documents, while also editing them.  I designed the logo with the help of Che’La. I met with the TA to discuss the SRS document to see how we could make it better. I didn’t make the meeting on October 16th because I had another mandatory meeting for the organization that I am apart of. I was told that I didn’t need to be at the meeting on November 16th because they were just meeting to get on the same page for a part of the project I wasn’t a part of.
+	
+**Phillip Breland**
+
+I advised on system requirements and technologies, provided back-end code debugging and DIA diagrams, and co-designed the initial schema. I designed a couple of the algorithms used in the back-end. I was not able to attend the initial meeting on October 3rd because of my work schedule.	
+	
+**Che’La Fleming**
+
+I also worked on the markdown for all documentation turned in. I designed the initial OfCourse! logo and worked on the official logo with Tyler. I was also a part of the meeting with the TA for the SRS document and drafted the revisions after the meeting. I did not participate in the November 16th meeting because it was only to scheduled to clarify some things for the back-end and front-end of this project.
+	
+**Nina Mohammed**
+
+I worked on the design aspect of our project, by adding the background picture and styling some of the components such as the calendar, course offerings, and the schedule boxes. Using HTML5 and CSS3, I added color to the components, positioned them on the page and tried to make the calendar more visually appealing. I missed the meeting on October 12th, because I was unable to come back to school.
+	
+**Jackie Robinson**
+
+I worked on creating the calendar, course offerings, and daily schedule components with Bootstrap, AngularUI, and AngularJS. More specifically, I created the dropdowns, tables, and modals. I created a model for a course object and created my components with the ability to bind data from the course object to the view. I created the GitHub repository and tried to maintain a steady flow of commits throughout the project to keep the team updated with the user interface. I created the project in Visual Studio and the project skeleton. I created all the tests on the Software Testing Document and proofread the SRS document. I created the theme and majority of the slides for the presentation. I recommended we use Trello to maintain our Agile board. 
+	
+**Kameron Smart**
+
+I performed a number of tasks, including: initiating documents for drafting (notably the SRS and SDD documents); assisting in defining the scope of our project; communicating between the various sections in our group for coherency purposes; outlining and developing the back-end capabilities of the application (including refactoring, restructuring, and commenting); designing the demonstration video for the presentation, and; presenting the application to the TA during the code implementation portion of the assignment. As co-project manager, I attended every meeting to discuss features, design, and implementation and provide updates.  
