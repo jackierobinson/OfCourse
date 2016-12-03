@@ -1,11 +1,11 @@
 
-Project Management Document
-Prepared by the OfCourse! Development Team
-(Tyler Anderson, Phillip Breland, Che’La Fleming, Nina Mohammed, Jackie Robinson, Kameron Smart)
+#Project Management Document
+##Prepared by the OfCourse! Development Team
+####(Tyler Anderson, Phillip Breland, Che’La Fleming, Nina Mohammed, Jackie Robinson, Kameron Smart)
 
 
-CSC 4330
-Fall 2016
+##CSC 4330
+##Fall 2016
 
 Table of Contents
 
