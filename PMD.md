@@ -84,11 +84,17 @@ Any project presents potential risks. Risks that affected our project include:
 ##Team Members
 
 Teamwork was essential towards the completion of the project. To facilitate productivity and improve communications, we designated three groups: front-end (composed of Nina Mohammed and Jackie Robinson) who handled the HTML and CSS of the application; back-end (composed of Phillip Breland and Kameron Smart) who handled the database and functionality of particular elements, and; documentation (Tyler Anderson and Che’La Fleming) who handled recording meetings, documentation, and miscellaneous tasks. We implemented a derived-hierarchal team style, in which two of the members (Jackie Robinson and Kameron Smart) served as co-project managers as the remaining members were designated tasks in their appropriate roles. The team members, and their associated roles are as follows:
+
 **Tyler Anderson** worked on converting documentation to Markdown, writing meeting summaries, and designed the logo featured on many of the documents and the front page.
+
 **Phillip Breland** advised on system requirements and technologies, provided back-end code debugging and DIA diagrams. He also co-designed the initial schema.
+
 **Che’La Fleming** worked on converting documentation to Markdown, recording summaries of group meetings, and worked with Tyler on the design of the OfCourse! logo.
+
 **Nina Mohammed** worked on designing and styling the user interface with HTML and CSS.
+
 **Jackie Robinson** worked on creating responsive user interface components like dropdowns and tables using AngularJS, Bootstrap, and AngularUI. She also served as co-project manager, managed the GitHub repository for the project and created the project code skeleton. She also created the Trello account that helped designate the tasks between group members.
+
 **Kameron Smart** worked on the back-end functionality of the application using JavaScript and JSON. He also served as co-project manager by formulating tasks and roles. 
 
 
