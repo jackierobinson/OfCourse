@@ -1,3 +1,4 @@
+![alt text](https://github.com/jackierobinson/OfCourse/blob/master/OfCourse%20SDD%20Logo.PNG)
 
 #Project Management Document
 ##Prepared by the OfCourse! Development Team
@@ -7,19 +8,19 @@
 ##CSC 4330
 ##Fall 2016
 
-Table of Contents
+#Table of Contents
 
 
 
-Vision	3
-Process Model	3
-Configuration Management	3
-Deliverables	4
-Potential Risks	4
-Team Members	5
-Project Schedule	6
-Meeting Summaries	6
-Project Personnel	7
+**Vision**			**3**
+**Process Model**		**3**
+**Configuration Management**		**3**
+**Deliverables**		**4**
+**Potential Risks**		**4**
+**Team Members**		**5**
+**Project Schedule**	**6**
+**Meeting Summaries**	**6**
+**Project Personnel**	**7**
 
 
 
