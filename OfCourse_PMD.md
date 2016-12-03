@@ -12,23 +12,23 @@
 
 #Table of Contents
 
-**Vision**			**3**
+**Vision**.....................................**3**
 
-**Process Model**		**3**
+**Process Model**..............................**3**
 
-**Configuration Management**		**3**
+**Configuration Management**...................**3**
 
-**Deliverables**		**4**
+**Deliverables**...............................**4**
 
-**Potential Risks**		**4**
+**Potential Risks**............................**4**
 
-**Team Members**		**5**
+**Team Members**...............................**5**
 
-**Project Schedule**	**6**
+**Project Schedule**...........................**6**
 
-**Meeting Summaries**	**6**
+**Meeting Summaries**..........................**6**
 
-**Project Personnel**	**7**
+**Project Personnel**..........................**7**
 
 
 
@@ -139,28 +139,48 @@ The development of OfCourse! (derived from the graph listed above), was as follo
 ##Meeting Summaries
 
 ###October 3rd
+
 Time: 2:17pm-2:41pm
+
 *Members there: Tyler, Che’La, Jackie, Nina, and Kameron*
-	We discussed the template that we had on Google Docs, including what we wanted to change about it and what we wanted keep at this point. We also said that we wanted to do the project in HTML. We decided that once we came up with a final one, it would be uploaded onto GitHub. Finally, we discussed the layout of the webpage.  We wanted a login function based on myLSU, ability to add to the schedule per day, filter enrolled classes per day, filter potential courses, and implement a pop-up of description of classes.
+
+We discussed the template that we had on Google Docs, including what we wanted to change about it and what we wanted keep at this point. We also said that we wanted to do the project in HTML. We decided that once we came up with a final one, it would be uploaded onto GitHub. Finally, we discussed the layout of the webpage.  We wanted a login function based on myLSU, ability to add to the schedule per day, filter enrolled classes per day, filter potential courses, and implement a pop-up of description of classes.
+	
 ###October 12th
+
 Time: 5pm-5:40pm
+
 *Members there: Tyler, Che’La, Jackie, Kameron, and Phillip*
-	We discussed Phase 1, which is the website phase.  We wanted the table to hold weekly schedule and discussed functions and design of table/chart.  Kameron told Che’La what he thought the website should look like and Che’la drew it up.  Lastly, we said what we wanted to have these tasks done for the next meeting; Che’La and Tyler were to markdown the SRS document, Jackie and Nina were to generate HTML code for the front-end, and Kameron and Phillip were to write out functions for the back-end.
+
+We discussed Phase 1, which is the website phase.  We wanted the table to hold weekly schedule and discussed functions and design of table/chart.  Kameron told Che’La what he thought the website should look like and Che’la drew it up.  Lastly, we said what we wanted to have these tasks done for the next meeting; Che’La and Tyler were to markdown the SRS document, Jackie and Nina were to generate HTML code for the front-end, and Kameron and Phillip were to write out functions for the back-end.
+	
 ###October 16th
+
 Time: 3pm-5pm
+
 *Members there: Che’La, Jackie, Nina, Kameron, and Phillip*
-	We met to work on the some of the External Interface Requirements. We decided that we wanted the scheduling application to function on the desktop as well as mobile devices and tablets. We also discussed the various APIs we intended to use. The TA had seen our initial draft our SRS Document, so we also discussed some business rules pertaining to OfCourse!
+
+We met to work on the some of the External Interface Requirements. We decided that we wanted the scheduling application to function on the desktop as well as mobile devices and tablets. We also discussed the various APIs we intended to use. The TA had seen our initial draft our SRS Document, so we also discussed some business rules pertaining to OfCourse!
+	
 ###November 16th
+
 Time: 6:30pm-7pm
+
 *Members there: Jackie, Nina, Kameron, and Phillip*
-	Made a to-do list.
-	1.  Update database to have course number, section number, and day of week.
-	2.  Implemented a today schedule, so that the program can get the current day of the week, and the courses for that day would be reflected in the schedule.
-	3.  Include more ‘CSC’ classes into offerings.
+
+Made a to-do list.
+
+1.  Update database to have course number, section number, and day of week.
+2.  Implemented a today schedule, so that the program can get the current day of the week, and the courses for that day would be reflected in the schedule.
+3.  Include more ‘CSC’ classes into offerings.
+	
 ###November 27th
+
 Time: 3pm-4pm
+
 *Members there: Tyler, Che’La, Jackie, Nina, Kameron, and Phillip*
-	We worked on the PowerPoint presentation and rehearsed for the actual presentation later that day. 
+
+We worked on the PowerPoint presentation and rehearsed for the actual presentation later that day. 
 
 
 ##Project Personnel
