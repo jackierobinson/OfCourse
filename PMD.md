@@ -93,6 +93,8 @@ Teamwork was essential towards the completion of the project. To facilitate prod
 
 
 ##Project Schedule
+	![Image of Project Schedule]
+	(https://github.com/jackierobinson/OfCourse/blob/master/Project%20Schedule.PNG)
 
 The development of OfCourse! (derived from the graph listed above), was as follows:
  - September
